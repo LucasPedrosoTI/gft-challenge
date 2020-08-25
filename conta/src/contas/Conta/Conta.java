@@ -8,6 +8,7 @@ public abstract class Conta implements Imposto {
   protected Long numero;
   protected String titular;
   protected BigDecimal saldo;
+  protected BigDecimal rendimento;
 
   protected abstract String rendimento();
 

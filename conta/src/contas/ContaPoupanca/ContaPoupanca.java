@@ -7,8 +7,6 @@ import contas.Conta.Conta;
 
 public class ContaPoupanca extends Conta {
 
-  private BigDecimal rendimento;
-
   @Override
   public String rendimento() {
     DecimalFormat df = new DecimalFormat("###.##");

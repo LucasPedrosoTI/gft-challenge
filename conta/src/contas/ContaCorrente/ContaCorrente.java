@@ -6,8 +6,7 @@ import java.text.DecimalFormat;
 import contas.Conta.Conta;
 
 public final class ContaCorrente extends Conta {
-  private BigDecimal rendimento;
-
+  
   @Override
   public String rendimento() {
     DecimalFormat df = new DecimalFormat("###.##");

@@ -16,5 +16,7 @@ public class App {
 
         System.out.println("Rendimento Conta corrente: " + cc.rendimento());
         System.out.println("Rendimento Conta poupança: " + cp.rendimento());
+        System.out.println("Imposto Conta corrente: " + cc.calcularImposto());
+        System.out.println("Imposto Conta poupança: " + cp.calcularImposto());
     }
 }

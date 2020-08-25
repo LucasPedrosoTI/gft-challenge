@@ -6,10 +6,10 @@ import java.text.DecimalFormat;
 import contas.Conta.Conta;
 
 public final class ContaCorrente extends Conta {
-  
+  DecimalFormat df = new DecimalFormat("###.##");
+
   @Override
   public String rendimento() {
-    DecimalFormat df = new DecimalFormat("###.##");
     double result = this.saldo.multiply(new BigDecimal(0.03)).doubleValue();
     this.rendimento = new BigDecimal(result);
 
@@ -18,7 +18,6 @@ public final class ContaCorrente extends Conta {
 
   @Override
   public String calcularImposto() {
-    DecimalFormat df = new DecimalFormat("###.##");
     double result = this.rendimento.multiply(new BigDecimal(0.25)).doubleValue();
 
     return df.format(result);

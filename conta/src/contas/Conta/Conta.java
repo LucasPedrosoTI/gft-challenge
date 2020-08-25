@@ -1,13 +1,17 @@
-package Conta;
+package contas.Conta;
 
 import java.math.BigDecimal;
 
-public abstract class Conta {
+import contas.imposto.Imposto;
+
+public abstract class Conta implements Imposto {
   protected Long numero;
   protected String titular;
   protected BigDecimal saldo;
 
   protected abstract String rendimento();
+
+  public abstract String calcularImposto();
 
   public Long getNumero() {
     return this.numero;

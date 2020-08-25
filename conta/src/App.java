@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 
-import ContaCorrente.*;
-import ContaPoupanca.ContaPoupanca;
+import contas.ContaCorrente.ContaCorrente;
+import contas.ContaPoupanca.ContaPoupanca;
 
 public class App {
     public static void main(String[] args) throws Exception {
